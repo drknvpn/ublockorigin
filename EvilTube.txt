@@ -1,5 +1,6 @@
+! Title: 📲 EvilTube
 ! ============================================================
-! Title: 📲 EvilTube — YouTube Filter (С Shorts)
+! 📲 EvilTube — YouTube Filter (С Shorts)
 ! ============================================================
 ! Версия: 2.0
 ! Автор: DARKNIIIT
