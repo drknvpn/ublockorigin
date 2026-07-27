@@ -1,0 +1,324 @@
+! ============================================================
+! 🗑️ RuNoAds — Блокировка рекламы на русскоязычных сайтах
+! ============================================================
+! Версия: 2.0
+! Автор: DARKNIIIT
+! Контакты: t.me/DARKNIIIT | YouTube: @PolnocnyWiatr
+! Дата обновления: 27.07.2026
+! Лицензия: MIT (свободное использование с указанием авторства)
+! Домашняя страница: скоро будет на сайте
+! ============================================================
+!
+! Описание:
+! Список для блокировки рекламы в основном сайтах Рунета.
+! Оптимизирован для Яндекс, Mail.ru, VK, MAX и других.
+! Рекомендуется подключать вместе с дополнительными списками
+! для максимальной эффективности.
+!
+! ============================================================
+! ОГЛАВЛЕНИЕ:
+! 1. Поисковики (Яндекс, Google, Bing)
+! 2. Почтовые сервисы (Mail.ru, Яндекс.Почта, Gmail)
+! 3. Социальные сети (VK, OK, Telegram)
+! 4. Маркетплейсы (Ozon, Wildberries, Avito, DNS)
+! 5. Видеохостинги (YouTube, Rutube)
+! 6. Новостные порталы (Lenta, RBC, TASS)
+! 7. Файлообменники и облака
+! 8. Универсальные правила
+! ============================================================
+
+! ============================================================
+! 1. ПОИСКОВИКИ
+! ============================================================
+
+! Яндекс — главная страница
+! Удаляем рекламные блоки и промо-баннеры
+yandex.ru##.head-promo-plus__icon
+yandex.ru##.head-promo-plus__title
+yandex.ru##.serp-footer__right
+yandex.ru##.link_js_inited.i-bem.promo-popup__social-icon_bg_gg-white.promo-popup__social-icon_type_gg.promo-popup__social-icon.link_theme_normal.link
+yandex.ru##.link_js_inited.i-bem.mobile-store-badge_platform_android.mobile-store-badge.link_theme_normal.link
+yandex.ru##.link_js_inited.i-bem.mobile-store-badge_platform_ios.mobile-store-badge.link_theme_normal.link
+yandex.ru##.link_js_inited.i-bem.serp-footer__col-item.serp-footer__collections.serp-footer__link.link_theme_clear.link
+yandex.ru##.link_js_inited.i-bem.serp-footer__stat.serp-footer__link.link_theme_clear.link
+
+! Яндекс — результаты поиска
+! Убираем рекламные сниппеты в выдаче
+yandex.ru##.serp-adv__add
+yandex.ru##.serp-adv__all
+yandex.ru##.organic_adv.organic
+yandex.ru##div.card__narrow.serp-item:nth-of-type(2)
+
+! Google — главная страница
+! Убираем ненужные элементы
+translate.google.com##.gb_td
+translate.google.com##.gbii.gb_Ia
+translate.google.com##.gb_i.gb_Oa.gb_D
+translate.google.com##div.gb_rc:nth-of-type(1) > svg
+translate.google.com##div.gb_rc:nth-of-type(1)
+translate.google.com##.tlid-send-feedback-link
+
+! Bing — главная страница
+www.bing.com##.sw_lang
+www.bing.com###dots_overflow_menu_container
+www.bing.com##.scopebar_link
+www.bing.com##li.item:nth-of-type(3) > [href^="//go.microsoft.com/fwlink/"]
+www.bing.com###privacy
+www.bing.com###sb_advertise
+www.bing.com###langChange > [href^="/search"]
+
+! ============================================================
+! 2. ПОЧТОВЫЕ СЕРВИСЫ
+! ============================================================
+
+! Яндекс.Почта — удаляем рекламный баннер и приложения
+mail.yandex.ru##.mail-LoadingBar-Container.ns-view-id-86.ns-view-loading-bar
+mail.yandex.ru##.mail-App-Footer-Wrap_3pane.js-mail-app-footer.mail-App-Footer-Wrap.ns-view-id-125.ns-view-footer
+mail.yandex.ru##.js-labels.mail-LabelList_common.mail-LabelList.ns-view-id-117.ns-view-labels
+mail.yandex.ru##.mail-MoreServices.mail-Toolbar-Item_link.mail-Toolbar-Item.ns-view-id-256.ns-view-more-services
+mail.yandex.ru##.mail-MoreServices.mail-Toolbar-Item_link.mail-Toolbar-Item.ns-view-id-262.ns-view-more-services
+mail.yandex.ru##.mail-MoreServices.mail-Toolbar-Item_link.mail-Toolbar-Item.ns-view-id-186.ns-view-more-services
+mail.yandex.ru##.mail-MoreServices.mail-Toolbar-Item_link.mail-Toolbar-Item.ns-view-id-236.ns-view-more-services > .mail-ui-Arrow
+mail.yandex.ru##.mail-MoreServices.mail-Toolbar-Item_link.mail-Toolbar-Item.ns-view-id-236.ns-view-more-services
+mail.yandex.ru##span.mail-App-Footer-Item:nth-of-type(2) > span.mail-App-Footer-Item:nth-of-type(2) > .ns-action.mail-ui-Link
+mail.yandex.ru##.mail-App-Footer-Item.mail-App-Footer-Group
+
+! Почта Mail.ru — чистим футер и лишние ссылки
+mail.ru##a.projects-item.o-media:nth-of-type(2) > .projects-item__body
+mail.ru##a.projects-item.o-media:nth-of-type(2)
+mail.ru##a.projects-item.o-media:nth-of-type(6) > .projects-item__body
+mail.ru##a.projects-item.o-media:nth-of-type(6)
+mail.ru##a.i-color-warm-grey.footer__item:nth-of-type(2)
+mail.ru##a.x-ph__link:nth-of-type(8)
+mail.ru##a.x-ph__link:nth-of-type(7)
+mail.ru##a.x-ph__link:nth-of-type(6)
+mail.ru##a.x-ph__link:nth-of-type(5) > .x-ph__link__text
+mail.ru##a.x-ph__link:nth-of-type(5)
+mail.ru##a.x-ph__link:nth-of-type(4) > .x-ph__link__text
+mail.ru##a.x-ph__link:nth-of-type(4)
+mail.ru###ph_my > .x-ph__link__text
+mail.ru###ph_my
+mail.ru##.x-ph__link_selected.x-ph__link_first.x-ph__link
+
+! ============================================================
+! 3. СОЦИАЛЬНЫЕ СЕТИ
+! ============================================================
+
+! VK — главная страница
+! Убираем рекламные посты, сторис и рекомендации
+vk.com##.audio_promo__link
+vk.com##.audio_subscribe_promo
+vk.com##._audio_friends_list.audio_friends_list
+vk.com##.audio_more_friends_btn.secondary.flat_button
+vk.com##.audio_friends_more_wrap
+vk.com###audio_friends_search
+vk.com##._wrap.audio_friends_search._audio_friends_search.ui_search_dark.ui_search_field_empty.ui_search.ui_search_new > .ui_search_input_block > ._ui_search_button_search.ui_search_button_search
+vk.com###video_create_live_btn
+vk.com###ui_possible_load_more
+vk.com##.right_list
+||vk.com/images/svg_icons/contour_arrow.svg$image
+vk.com##.shown._actions_menu.friends_actions_menu._ui_menu_wrap.ui_actions_menu_wrap > ._ui_menu.ui_actions_menu > .lists_select.ui_actions_menu_item_sublist.ui_actions_menu_item
+vk.com###ui_rmenu_podcasts
+vk.com##.stories_feed_items_wrap
+vk.com##.clear_fix.stories_feed_title
+vk.com##.dev_main_platform_icon_ios.dev_main_platform_icon
+vk.com##a.dev_main_platform:nth-of-type(1) > .dev_main_platform_title
+vk.com##div.fl_l.dev_main_footer_section:nth-of-type(2) > .dev_main_footer_section_links > li.dev_main_footer_section_link:nth-of-type(1)
+vk.com##a.bnav_a:nth-of-type(4)
+
+! VK — мобильная версия
+m.vk.com##.mmi_recommended > .al_menu.mm_item > .mmi_wrap
+m.vk.com##.mmi_recommended > .al_menu.mm_item
+m.vk.com##.mmi_likes > .al_menu.mm_item
+m.vk.com##.feedAssistance_promoButton.feedAssistance.wall_item > .wi_body
+m.vk.com##.feedAssistance_promoButton.feedAssistance.wall_item
+m.vk.com##.StoriesFeedBlock__wrap.Slider > ._preventMenuOpen.Slider__scroll > .Slider__line
+m.vk.com##.StoriesFeedBlock__wrap.Slider
+m.vk.com###StoriesFeedBlock
+m.vk.com##.al_tab.tab_item_podcasts.tab_item_list._thide.tab_item
+m.vk.com##.BookmarkSlider.Slider
+
+! OK — главная страница
+ok.ru##.__invisible.portlet
+ok.ru##[href="https://m.ok.ru"]
+ok.ru##[href="https://sales.mail.ru/ru/russia/odnoklassniki/latest/#price"]
+ok.ru###hook_Block_SocialFriendsMenuRB > .portlet
+ok.ru##a.mctc_navMenuSec:nth-of-type(6)
+ok.ru##a.x-ph__link:nth-of-type(3) > .x-ph__link__text
+ok.ru##.x-ph__link_first.x-ph__link
+ok.ru##a.x-ph__link:nth-of-type(9)
+ok.ru##a.x-ph__link:nth-of-type(8)
+ok.ru##a.x-ph__link:nth-of-type(7)
+ok.ru##.h-mod.x-ph__link > .x-ph__link__text
+ok.ru##a.x-ph__link:nth-of-type(5) > .x-ph__link__text
+ok.ru##div.ugrid_i:nth-of-type(3) > .pf-head_ac > .add-stub__hor.al.add-stub > .add-stub_tx-w > .add-stub_tx
+ok.ru##.svg-ico_translation_c_28.svg-ic > path:nth-of-type(2)
+ok.ru##.svg-ico_translation_c_28.svg-ic > path:nth-of-type(1)
+ok.ru##.svg-ico_translation_c_28.svg-ic
+ok.ru##div.ugrid_i:nth-of-type(3) > .pf-head_ac > .add-stub__hor.al.add-stub > .__svg.add-stub_img
+ok.ru##div.ugrid_i:nth-of-type(3) > .pf-head_ac > .add-stub__hor.al.add-stub
+ok.ru##div.payments-extra-link:nth-of-type(5) > .nav-side > .nav-side_i
+ok.ru##div.payments-extra-link:nth-of-type(6) > .nav-side > .nav-side_i
+ok.ru##div.feed-w:nth-of-type(3) > .h-mod.__no-ava.js-video-scope.feed
+ok.ru##.h-mod.apps-showcase__video.portlet
+
+! ============================================================
+! 4. МАРКЕТПЛЕЙСЫ И МАГАЗИНЫ
+! ============================================================
+
+! Ozon — главная страница
+ozon.ru##div[data-widget="cookieBubble"]
+ozon.ru##a[href*="?advert="]
+ozon.ru##a[href*="promo"]
+ozon.ru##div[data-widget="advBanner"]
+ozon.ru##div[data-widget="seasonWidget"]
+ozon.ru##div[data-widget="bannerCarousel"]
+
+! Wildberries — главная страница
+www.wildberries.ru##.j-li-go-to-mobile-site.c-link-out3
+www.wildberries.ru##.mobile-site
+www.wildberries.ru##.apps.item-footer
+www.wildberries.ru##.soc-net.item-footer > ul > li:nth-of-type(6)
+www.wildberries.ru##.soc-net.item-footer > ul > li:nth-of-type(2)
+www.wildberries.ru##.soc-net.item-footer > ul > li:nth-of-type(3)
+www.wildberries.ru##.j-promo-carousel-wrapper.similar-goods-wrapper > .j-slider-gallery.i-slider-gallery
+www.wildberries.ru##div.similar-goods-wrapper:nth-of-type(6) > div > .j-slider-gallery.i-slider-gallery
+www.wildberries.ru##.also-buy-wrapper.similar-goods-wrapper > div > .j-slider-gallery.i-slider-gallery
+www.wildberries.ru##.limited.i-tags-group
+www.wildberries.ru##.j-recent-goods-container.i-visited-goods > .j-products-container.list
+www.wildberries.ru##.visited-goods-header
+www.wildberries.ru##span:nth-of-type(5) > [href="//style.wildberries.ru/"]
+www.wildberries.ru##.compatability
+www.wildberries.ru##.mm
+www.wildberries.ru##.twitter
+www.wildberries.ru##.fb
+
+! Avito — главная страница
+www.avito.ru##.apps-banner_vertical.apps-banner
+www.avito.ru##.width-width-12-2VZLz.carousel-content-wrap_right-shadow-k5Ni0.carousel-layout-XP-XZ
+www.avito.ru##.item-view-ads
+www.avito.ru##.alert-design-warning-lSCAn.alert-alert-qP1VZ
+www.avito.ru##div[data-marker="installments-promoblock"]
+www.avito.ru##div[class^="style__item-view-ads"]
+
+! DNS — главная страница
+www.dns-shop.ru##.valentines-day-2020.head-promo-banner
+www.dns-shop.ru###b-0805bfb7-ff0f-4b61-99e2-61277ee39eec
+www.dns-shop.ru##.main-footer__main-right
+www.dns-shop.ru##.header-top-menu__common-list > li.header-top-menu__common-item:nth-of-type(4) > .header-top-menu__common-link
+www.dns-shop.ru##.products-page__left-block > .products-page__helpers > .category-helpers > .category-helpers__choice-guide > .choice-guide
+www.dns-shop.ru##.products-page__left-block > .products-page__helpers > .category-helpers > .category-helpers__survey
+www.dns-shop.ru##.spoiler-text-description_expanded.spoiler-text-description
+www.dns-shop.ru###b-c839ed69-6eb5-4d8d-b0a7-b20a523b3db5
+www.dns-shop.ru##.products-page__left-block > .products-page__helpers > .category-helpers > .category-helpers__choice-guide > .choice-guide > .choice-guide__text-wrapper > .ui-link_blue.ui-link.choice-guide__link
+www.dns-shop.ru###b-a8b694cc-1b7c-45b8-a67c-a81311aaf180
+www.dns-shop.ru##.products-page__left-block > .products-page__helpers
+
+! ============================================================
+! 5. ВИДЕОХОСТИНГИ
+! ============================================================
+
+! YouTube — основные фильтры (универсальные)
+! Удаляем пустые места в сетке видео
+www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! Возвращаем 5 видео в ряд
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 5 !important;)
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-posts-per-row: 5 !important;)
+
+! Убираем баннер "Купить Premium"
+www.youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer.style-scope:nth-of-type(2)
+
+! ============================================================
+! 6. НОВОСТНЫЕ ПОРТАЛЫ
+! ============================================================
+
+! Lenta.ru
+lenta.ru##.js-topic__sidebars.dejfz.b-topic-layout__right
+lenta.ru##.exii.zfoa
+lenta.ru##.b-footer__mobile-link.uiueypn
+lenta.ru##.js-sharing.xgpeka.b-socials__sharing > div:nth-of-type(1)
+lenta.ru##.js-sharing.xgpeka.b-socials__sharing > div:nth-of-type(4)
+
+! RBC
+www.rbc.ru##.g-border-bottom.g-mobile-visible.banner__filmstrip > .banner__container__link > .banner__container__border > .banner__container__info
+www.rbc.ru##.g-border-bottom.g-mobile-visible.banner__filmstrip > .banner__container__link > .banner__container__border
+www.rbc.ru##.g-border-bottom.g-mobile-visible.banner__filmstrip > .banner__container__link
+www.rbc.ru##.g-border-bottom.g-mobile-visible.banner__filmstrip
+www.rbc.ru##.current.rbcslider__slide.js-rbcslider-slide > .js-rbcslider-article.g-relative.article > .l-table > .l-col-main > .g-banner-hide-by-exclusive.banner__median_mobile > .banner__container__link > .banner__container__border
+www.rbc.ru##.current.rbcslider__slide.js-rbcslider-slide > .js-rbcslider-article.g-relative.article > .l-table > .l-col-main > .g-banner-hide-by-exclusive.banner__median_mobile > .banner__container__link
+www.rbc.ru##.current.rbcslider__slide.js-rbcslider-slide > .js-rbcslider-article.g-relative.article > .l-table > .l-col-main > .g-banner-hide-by-exclusive.banner__median_mobile
+
+! TASS
+tass.ru##.social-promo_instagram.social-promo
+tass.ru##.footer-action-buttons
+tass.ru##a.footer-links__link:nth-of-type(4)
+tass.ru##a.footer-share__icon:nth-of-type(1)
+tass.ru##a.footer-share__icon:nth-of-type(3)
+tass.ru##a.footer-share__icon:nth-of-type(4)
+tass.ru##a.footer-share__icon:nth-of-type(6)
+
+! ============================================================
+! 7. ФАЙЛООБМЕННИКИ И ОБЛАКА
+! ============================================================
+
+! Яндекс.Диск
+yadi.sk##.mobile-badges
+yadi.sk##.burger-sidebar__button.button2_theme_clear.button2_size_n.button2_view_classic.button2.control
+yadi.sk##a.footer__link.link_theme_ghost.link.control:nth-of-type(3)
+
+! Mega
+mega.nz##.active.clickurl.extensions.transition.nav-button.pages-nav > .content.pages-nav
+mega.nz##.active.resellers.top-menu-item
+mega.nz##.resellerlink.clickurl.link.bottom-menu
+mega.nz##div.col1-of-6.column.bottom-menu:nth-of-type(3) > a.clickurl.link.bottom-menu:nth-of-type(3)
+mega.nz##div.col1-of-6.column.bottom-menu:nth-of-type(3) > a.clickurl.link.bottom-menu:nth-of-type(1)
+
+! Облако Mail.ru
+cloud.mail.ru##.portal-promo_with-icon.portal-promo
+cloud.mail.ru###leftcol > div:nth-of-type(4)
+cloud.mail.ru##span.pm-toolbar__group.js-group:nth-of-type(2) > span.pm-toolbar__button.js-button:nth-of-type(2) > .pm-toolbar__button__inner.js-link
+cloud.mail.ru###portal-footer__project-links
+cloud.mail.ru##.portal-footer__col_left.portal-footer__col
+cloud.mail.ru##.portal-footer__col_right.portal-footer__col
+cloud.mail.ru###ph_my > .x-ph__link__text
+cloud.mail.ru###ph_my
+cloud.mail.ru##a.x-ph__link:nth-of-type(8)
+cloud.mail.ru##a.x-ph__link:nth-of-type(7)
+cloud.mail.ru##a.x-ph__link:nth-of-type(6)
+cloud.mail.ru##a.x-ph__link:nth-of-type(5) > .x-ph__link__text
+cloud.mail.ru##a.x-ph__link:nth-of-type(5)
+cloud.mail.ru##a.x-ph__link:nth-of-type(4) > .x-ph__link__text
+cloud.mail.ru##a.x-ph__link:nth-of-type(4)
+cloud.mail.ru##.x-ph__link_first.x-ph__link
+
+! ============================================================
+! 8. УНИВЕРСАЛЬНЫЕ ПРАВИЛА
+! ============================================================
+
+! Блокировка рекламных элементов по типу
+! Эти правила работают на многих сайтах
+
+##.banner-ad
+##.ad-banner
+##.advertisement
+##.advert
+##.ads-box
+##.ad-container
+
+! Блокировка iframe с рекламой
+||*://*.doubleclick.net/*
+||*://*.googleadservices.com/*
+||*://*.googletagservices.com/*
+
+! Удаление социальных кнопок
+##.social-share
+##.social-likes
+##.share-buttons
+
+! ============================================================
+! КОНЕЦ ФАЙЛА
+! ============================================================
+! Если вы нашли ошибку или хотите предложить улучшение:
+! t.me/DARKNIIIT | YouTube: @PolnocnyWiatr
+! ============================================================

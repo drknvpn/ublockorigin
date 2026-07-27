@@ -1,0 +1,89 @@
+! ============================================================
+! 📱 EvilTubeNoShorts — YouTube Filter (Без Shorts)
+! ============================================================
+! Версия: 2.0
+! Автор: DARKNIIIT
+! Контакты: t.me/DARKNIIIT | YouTube: @PolnocnyWiatr
+! Дата обновления: 27.07.2026
+! ============================================================
+!
+! Описание:
+! Дополнительный список для YouTube.
+! В этой версии ПОЛНОСТЬЮ убраны Shorts:
+! - Раздел Shorts на главной странице
+! - Кнопка Shorts в боковом меню
+! - Короткие видео в рекомендациях
+! - Вкладка Shorts на каналах
+!
+! Вся остальная реклама блокируется основным списком ads_list.
+! Рекомендуется подключать вместе с основным фильтром.
+!
+! ============================================================
+
+! ============================================================
+! 1. БЛОКИРОВКА SHORTS НА ГЛАВНОЙ СТРАНИЦЕ
+! ============================================================
+
+! Убираем раздел "Shorts" в ленте рекомендаций
+www.youtube.com##ytd-rich-section-renderer:has(#title:has-text(/(^| )Shorts( |$)/i))
+www.youtube.com##ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(/(^| )Shorts( |$)/i))
+
+! Убираем категорию Shorts в поиске и на главной
+www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+
+! ============================================================
+! 2. БЛОКИРОВКА SHORTS В БОКОВОМ МЕНЮ
+! ============================================================
+
+! Десктопная версия — левое меню
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+
+! Планшетная версия — уменьшенное меню
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Shorts$/i))
+
+! ============================================================
+! 3. БЛОКИРОВКА SHORTS НА КАНАЛАХ
+! ============================================================
+
+! Вкладка "Shorts" на странице канала (новый стиль)
+www.youtube.com##tp-yt-paper-tab:has(.tp-yt-paper-tab:has-text(Shorts))
+
+! Мобильная версия — вкладка на канале
+m.youtube.com##.single-column-browse-results-tabs>a:has-text(Shorts)
+
+! ============================================================
+! 4. БЛОКИРОВКА SHORTS В РЕКОМЕНДАЦИЯХ
+! ============================================================
+
+! Скрываем видео с хештегом #shorts в ленте
+www.youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+www.youtube.com##ytd-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+
+! Скрываем видео с индикатором Shorts на миниатюре
+www.youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
+
+! Скрываем вкладку Shorts в ленте подписок
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="subscriptions"]:has(ytd-video-renderer:has([overlay-style="SHORTS"]))
+
+! ============================================================
+! 5. ДОПОЛНИТЕЛЬНО — ЧИСТКА ИНТЕРФЕЙСА
+! ============================================================
+
+! Убираем кнопку "Купить Premium" в меню
+www.youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer.style-scope:nth-of-type(2)
+
+! Убираем пустые места в сетке видео
+www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! Возвращаем 5 видео в ряд
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 5 !important;)
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-posts-per-row: 5 !important;)
+
+! ============================================================
+! КОНЕЦ ФАЙЛА
+! ============================================================
+! Вопросы и предложения: t.me/DARKNIIIT
+! YouTube-канал: @PolnocnyWiatr
+! ============================================================

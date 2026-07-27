@@ -1,0 +1,65 @@
+! ============================================================
+! 📲 EvilTube — YouTube Filter (С Shorts)
+! ============================================================
+! Версия: 2.0
+! Автор: DARKNIIIT
+! Контакты: t.me/DARKNIIIT | YouTube: @PolnocnyWiatr
+! Дата обновления: 27.07.2026
+! ============================================================
+!
+! Описание:
+! Дополнительный список для YouTube.
+! В этой версии SHORTS ОСТАВЛЕНЫ НЕТРОНУТЫМИ.
+! Блокируется только остальная реклама и мусор в интерфейсе.
+!
+! Рекомендуется для тех, кто любит смотреть Shorts,
+! но хочет убрать лишнюю рекламу.
+!
+! ============================================================
+
+! ============================================================
+! 1. ЧИСТКА ИНТЕРФЕЙСА YouTube
+! ============================================================
+
+! Убираем кнопку "Купить Premium" в меню
+www.youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer.style-scope:nth-of-type(2)
+
+! Убираем пустые места в сетке видео
+www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! Возвращаем 5 видео в ряд (для удобства)
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 5 !important;)
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-posts-per-row: 5 !important;)
+
+! ============================================================
+! 2. УБИРАЕМ РЕКЛАМНЫЕ ЭЛЕМЕНТЫ (SHORTS НЕ ТРОГАЕМ)
+! ============================================================
+
+! Убираем баннер "Купить Premium" в плеере
+www.youtube.com##.yt-mealbar-promo-renderer.style-scope.yt-mealbar-promo-renderer-content > div.yt-mealbar-promo-renderer.style-scope
+www.youtube.com##.yt-mealbar-promo-renderer.style-scope.button-container
+
+! Убираем рекламные баннеры на странице видео
+www.youtube.com##ytd-companion-slot-renderer.ytd-player-legacy-desktop-watch-ads-renderer.style-scope
+
+! Убираем кнопку "Попробуй YouTube Premium" в плеере
+www.youtube.com##.ytp-ad-image-overlay
+www.youtube.com##.ytp-ad-overlay-slot
+
+! Убираем всплывающие окна с предложением Premium
+www.youtube.com##.ytd-popup-container.style-scope > .ytd-mealbar-promo-renderer.style-scope
+www.youtube.com##.yt-upsell-dialog-renderer
+
+! ============================================================
+! 3. SHORTS ОСТАВЛЕНЫ — НИЧЕГО НЕ БЛОКИРУЕМ
+! ============================================================
+
+! В этой версии все правила для блокировки Shorts
+! отключены. Вы можете продолжать смотреть короткие видео.
+
+! ============================================================
+! КОНЕЦ ФАЙЛА
+! ============================================================
+! Вопросы и предложения: t.me/DARKNIIIT
+! YouTube-канал: @PolnocnyWiatr
+! ============================================================
