@@ -1,5 +1,6 @@
+! Title: 📱 EvilTubeNoShorts
 ! ============================================================
-! Title: 📱 EvilTubeNoShorts — YouTube Filter (Без Shorts)
+! 📱 EvilTubeNoShorts — YouTube Filter (Без Shorts)
 ! ============================================================
 ! Версия: 2.0
 ! Автор: DARKNIIIT
