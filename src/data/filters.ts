@@ -18,9 +18,9 @@ export interface FilterBlock {
 export const FILTERS: FilterBlock[] = [
   {
     url: 'https://raw.githubusercontent.com/drknvpn/ublockorigin/refs/heads/main/RuNoAds.txt',
-    emoji: '🗑️',
+    emoji: '🩷',
     name: 'RuNoAds',
-    tagline: 'Основной фильтр для русскоязычных сайтов и не только',
+    tagline: 'Основной фильтр для RU',
     priority: 'main',
     summary:
       'Базовый список фильтров для блокировки рекламы на русскоязычных сайтах. Оптимизирован для работы с Яндекс, Mail.ru, VK и MAX. Содержит 17 000+ правил для повседневного использования.',
@@ -36,7 +36,7 @@ export const FILTERS: FilterBlock[] = [
   },
   {
     url: 'https://raw.githubusercontent.com/drknvpn/ublockorigin/refs/heads/main/EvilTube.txt',
-    emoji: '🗑️',
+    emoji: '📲',
     name: 'EvilTube',
     tagline: 'С Shorts',
     priority: 'extra',
