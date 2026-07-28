@@ -2,41 +2,38 @@ import { Github, ShieldCheck } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="relative px-5 pt-10 pb-12">
-      <div className="mx-auto max-w-6xl">
-        <div className="glass rounded-3xl px-6 py-8 sm:px-10 sm:py-10">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-3">
-              <span className="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400/30 to-violet-400/30 border border-white/15">
-                <ShieldCheck className="w-5 h-5 text-sky-300" />
-              </span>
+    <footer className="relative px-4 pt-8 pb-10">
+      <div className="mx-auto max-w-5xl">
+        <div className="panel-mid rounded-xl px-6 py-6 sm:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
+            <div className="flex items-center gap-2.5">
+              <ShieldCheck className="w-4 h-4" style={{ color: 'var(--accent)' }} strokeWidth={2} />
               <div>
-                <p className="font-heading font-semibold text-[15px]">RuNoAds Filter Lists</p>
-                <p className="font-mono text-[11.5px] text-white/45">Открытый проект · 17 000+ правил</p>
+                <p className="font-heading font-semibold text-[13px] text-white">RuNoAds Filter Lists</p>
+                <p className="font-mono text-[10.5px] text-white/35">открытый проект · 17 000+ правил</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <a
                 href="https://github.com/drknvpn/ublockorigin"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass-soft hover:bg-white/10 transition font-mono text-[12.5px] text-white/70 hover:text-white"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg panel font-mono text-[11.5px] text-white/55 hover:text-white/85 transition hover:border-white/20"
               >
-                <Github className="w-4 h-4" />
+                <Github className="w-3.5 h-3.5" />
                 GitHub
               </a>
               <a
                 href="#top"
-                className="px-4 py-2.5 rounded-xl glass-soft hover:bg-white/10 transition font-mono text-[12.5px] text-white/70 hover:text-white"
+                className="px-3.5 py-2 rounded-lg panel font-mono text-[11.5px] text-white/55 hover:text-white/85 transition hover:border-white/20"
               >
-                Наверх
+                наверх
               </a>
             </div>
           </div>
-          <div className="mt-7 pt-6 border-t border-white/10 text-center">
-            <p className="font-mono text-[11px] text-white/35 leading-relaxed">
+          <div className="mt-5 pt-4 border-t border-white/8 text-center">
+            <p className="font-mono text-[10px] text-white/25 leading-relaxed">
               Фильтры распространяются свободно. Проект не связан с uBlock Origin и AdGuard.
-              Используйте на свой страх и риск.
             </p>
           </div>
         </div>

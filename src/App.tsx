@@ -1,4 +1,4 @@
-import { Aurora, Noise } from '@/components/Background';
+import { AmbientGlow, Noise } from '@/components/Background';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { Filters } from '@/components/Filters';
@@ -10,7 +10,7 @@ import { Footer } from '@/components/Footer';
 export default function App() {
   return (
     <div className="relative min-h-screen">
-      <Aurora />
+      <AmbientGlow />
       <Noise />
       <Navbar />
       <main>

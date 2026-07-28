@@ -7,49 +7,30 @@ export function Noise() {
   );
 }
 
-export function Aurora() {
+export function AmbientGlow() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden" aria-hidden>
       <div
-        className="aurora animate-floaty"
+        className="glow"
         style={{
-          width: 520,
-          height: 520,
-          top: '-8%',
-          left: '-6%',
-          background: 'radial-gradient(circle, rgba(56,189,248,0.55), transparent 70%)',
+          width: 700,
+          height: 500,
+          top: '-15%',
+          left: '-10%',
+          background: 'radial-gradient(ellipse, rgba(168,197,218,0.07) 0%, transparent 65%)',
+          animation: 'floaty 20s ease-in-out infinite',
         }}
       />
       <div
-        className="aurora animate-floaty2"
+        className="glow"
         style={{
-          width: 600,
-          height: 600,
-          top: '20%',
-          right: '-10%',
-          background: 'radial-gradient(circle, rgba(167,139,250,0.45), transparent 70%)',
-        }}
-      />
-      <div
-        className="aurora animate-floaty"
-        style={{
-          width: 480,
-          height: 480,
-          bottom: '-12%',
-          left: '30%',
-          background: 'radial-gradient(circle, rgba(45,212,191,0.4), transparent 70%)',
-          animationDelay: '4s',
-        }}
-      />
-      <div
-        className="aurora animate-floaty2"
-        style={{
-          width: 380,
-          height: 380,
-          bottom: '10%',
-          right: '18%',
-          background: 'radial-gradient(circle, rgba(244,114,182,0.35), transparent 70%)',
-          animationDelay: '2s',
+          width: 500,
+          height: 500,
+          bottom: '-10%',
+          right: '-8%',
+          background: 'radial-gradient(ellipse, rgba(168,197,218,0.05) 0%, transparent 65%)',
+          animation: 'floaty 26s ease-in-out infinite reverse',
+          animationDelay: '5s',
         }}
       />
     </div>
