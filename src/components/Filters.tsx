@@ -143,7 +143,7 @@ export function Filters() {
           <Star className="w-3.5 h-3.5 text-amber-300/60 mt-0.5 shrink-0 fill-amber-300/20" />
           <p className="font-mono text-[11.5px] text-white/45 leading-relaxed">
             <span className="text-white/70">Совет:</span> для максимальной эффективности используйте
-            все три файла вместе. Сначала <span style={{ color: 'var(--accent)' }}>RuNoAds</span>,
+            два файла вместе. Сначала <span style={{ color: 'var(--accent)' }}>RuNoAds</span>,
             затем один из YouTube-фильтров на выбор.
           </p>
         </div>
