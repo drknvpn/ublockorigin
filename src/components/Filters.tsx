@@ -128,7 +128,7 @@ export function Filters() {
             Каталог <span className="text-shimmer">фильтров</span>
           </h2>
           <p className="mt-2 mx-auto max-w-md font-mono text-[12px] text-white/40 leading-relaxed">
-            RuNoAds — основной, подключается первым. EvilTube и EvilTubeNoShorts — поверх основного.
+            RuNoAds — основной, подключается первым. EvilTube или EvilTubeNoShorts — поверх основного.
           </p>
         </div>
 
