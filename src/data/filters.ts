@@ -90,7 +90,7 @@ export const EXTENSIONS: ExtensionInfo[] = [
   {
     id: 'ublock',
     name: 'uBlock Origin',
-    emoji: '🛡️',
+    emoji: '📕',
     description:
       'Эффективный блокировщик рекламы с открытым исходным кодом. Минимальная нагрузка на память и процессор.',
     links: [
@@ -103,7 +103,7 @@ export const EXTENSIONS: ExtensionInfo[] = [
   {
     id: 'adguard',
     name: 'AdGuard',
-    emoji: '🧿',
+    emoji: '📗',
     description:
       'Мощный блокировщик рекламы и трекеров с гибкими настройками фильтров и поддержкой кастомных списков.',
     links: [
